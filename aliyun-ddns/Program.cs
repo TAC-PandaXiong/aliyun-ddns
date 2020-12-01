@@ -55,7 +55,7 @@ namespace aliyun_ddns
 					return;
                 }
 
-				_logFile = string.Format(@"{0}\{1}.log", Environment.CurrentDirectory, APP_NAME);
+				_logFile = string.Format(@"{0}{1}.log", AppDomain.CurrentDomain.BaseDirectory, APP_NAME);
 				Printf("============================================================");
 
 				// parse arguments
